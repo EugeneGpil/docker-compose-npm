@@ -30,4 +30,5 @@ USER root
 RUN echo "\n\
         source /home/app/.nvm/nvm.sh\n\
     " >> ~/.bashrc &&\
-		corepack enable
+		corepack enable &&\
+    apt-get install xsel -y
