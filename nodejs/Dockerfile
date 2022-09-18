@@ -29,4 +29,5 @@ ENV PATH /home/app/.nvm/versions/node/v${NODE_VERSION}/bin:${PATH}
 USER root
 RUN echo "\n\
         source /home/app/.nvm/nvm.sh\n\
-    " >> ~/.bashrc
+    " >> ~/.bashrc &&\
+		corepack enable
